@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="126.485">
-    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results" time="52.312">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="100.111">
+    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results" time="28.977">
         <system-out><![CDATA[Given I open the browser and enter the URL..................................passed
 When I enter a valid product name as 'sofa' in the search bar...............passed
 And I click on the search button............................................passed
@@ -8,7 +8,7 @@ Then results should be found for the search term............................pass
 Then no results should be found for the search term.........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 2" time="11.803">
+    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 2" time="13.011">
         <system-out><![CDATA[Given I open the browser and enter the URL..................................passed
 When I enter a valid product name as '' in the search bar...................passed
 And I click on the search button............................................passed
@@ -16,7 +16,7 @@ Then results should be found for the search term............................pass
 Then no results should be found for the search term.........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 3" time="12.899">
+    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 3" time="21.799">
         <system-out><![CDATA[Given I open the browser and enter the URL..................................passed
 When I enter a valid product name as 'perfumes' in the search bar...........passed
 And I click on the search button............................................passed
@@ -24,7 +24,7 @@ Then results should be found for the search term............................pass
 Then no results should be found for the search term.........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 4" time="17.232">
+    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 4" time="15.088">
         <system-out><![CDATA[Given I open the browser and enter the URL..................................passed
 When I enter a valid product name as 'chopa' in the search bar..............passed
 And I click on the search button............................................passed
@@ -32,7 +32,7 @@ Then results should be found for the search term............................pass
 Then no results should be found for the search term.........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 5" time="32.006">
+    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 5" time="20.969">
         <system-out><![CDATA[Given I open the browser and enter the URL..................................passed
 When I enter a valid product name as 'Industrial Tan 90cm Studded Back Bench' in the search bar.passed
 And I click on the search button............................................passed

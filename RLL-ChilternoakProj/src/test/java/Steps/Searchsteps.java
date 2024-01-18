@@ -1,20 +1,14 @@
 package Steps;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import junit.framework.Assert;
 import pagefactory.Searchpage;
 
 
@@ -58,7 +52,7 @@ public class Searchsteps {
        
         Searchpage Searchpage = new Searchpage();
 
-        String validProductName = "Genoa Glass Sofa Table With Gold Frame";
+        String validProductName = " Sofa ";
  
         boolean resultsFound = Searchpage.isResultFound(validProductName);
         
@@ -77,6 +71,3 @@ public class Searchsteps {
         assertFalse("No results should be found for the search term", resultsFound);
     }
 }
-   
-        
-        
