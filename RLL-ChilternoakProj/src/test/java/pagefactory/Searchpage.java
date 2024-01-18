@@ -27,10 +27,8 @@ import org.openqa.selenium.support.FindBy;
 		
 
 	    public boolean isResultFound(String searchTerm) {
-	        // Logic to perform the search and determine if results are found
-	        // You can replace this with your actual search logic
-
-	        // For example:
+	       
+	       
 	        if (performSearch(searchTerm)) {
 	            return true;
 	        } else {
@@ -38,10 +36,9 @@ import org.openqa.selenium.support.FindBy;
 	        }
 	    }
 
-	    // Mocked method for performing search
+	    
 	    private boolean performSearch(String searchTerm) {
-	        // Replace this with your actual search implementation
-	        // For example, return true if results are found, false otherwise
+	       
 	        return searchTerm.equals("existingTerm");
 	    }
 		

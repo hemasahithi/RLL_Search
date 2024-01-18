@@ -70,7 +70,7 @@ public class Searchsteps {
         
         Searchpage searchpage = new Searchpage();
 
-        String nonExistentTerm = "Bikes";
+        String nonExistentTerm = "perfumes";
        
         boolean resultsFound = searchpage.isResultFound(nonExistentTerm);
       
