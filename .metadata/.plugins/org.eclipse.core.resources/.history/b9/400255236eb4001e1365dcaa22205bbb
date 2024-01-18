@@ -1,0 +1,14 @@
+Feature: Product Search Functionality
+
+  Scenario: Enter  search term and verify  results
+    Given I open the browser and enter the URL
+    Then I click on the login link and enter the email  
+   When I enter a product name as <productName> in the search bar
+    And I click on the search button
+  Examples:
+  |productName|
+   |"sofa"| 
+   |""|
+ |"sofaier"|
+ |"perfume"|
+ |"Industrial Tan 90cm Studded Back Bench"|

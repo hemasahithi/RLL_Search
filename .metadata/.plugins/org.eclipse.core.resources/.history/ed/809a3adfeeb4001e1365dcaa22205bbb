@@ -1,0 +1,47 @@
+package Steps;
+
+import static org.junit.Assert.assertEquals;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pagefactory.Searchpage;
+
+
+public class Searchsteps {
+	WebDriver driver;
+    private Searchpage searchPage;
+    
+    @Given("I open the browser and enter the URL")
+    public void iOpenTheBrowserAndEnterTheURL() {
+    	 searchPage = new Searchpage();
+    	driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.chilternoakfurniture.co.uk/");
+        searchPage= PageFactory.initElements(driver, Searchpage.class);
+
+        
+    }
+
+    @When("I enter a valid product name as {string} in the search bar")
+    public void iEnterAValidProductNameInTheSearchBar(String productName) {
+        searchPage.enterSearchTerm(productName);
+    }
+
+    @When("I click on the search button")
+    public void iClickOnTheSearchButton() {
+        searchPage.clickSearchButton();
+        
+        driver.close();  
+    }
+    
+
+        
+        
+   
+    }
+    

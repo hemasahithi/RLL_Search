@@ -1,0 +1,31 @@
+Feature: Product Search Functionality
+
+  Scenario: Enter valid search term and verify relevant results
+    Given the user is on the homepage
+    When the user enters a valid search term in the search bar
+    And clicks the search button
+    Then the user should see relevant search results
+
+  Scenario: Performing Empty search
+    Given the user is on the homepage
+    When the user leaves the search bar empty
+    And clicks the search button
+    Then the user should see a message indicating no results found
+
+  Scenario: Search for a term that does not exist
+    Given the user is on the homepage
+    When the user enters a non-existent term in the search bar
+    And clicks the search button
+    Then the user should see a message indicating no results found
+
+  Scenario: Search with misspelled term and check for suggestions
+    Given the user is on the homepage
+    When the user enters a misspelled search term in the search bar
+    And clicks the search button
+    Then the user should see suggestions for the correct term
+
+  Scenario: Use multiple search terms and check for results
+    Given the user is on the homepage
+    When the user enters multiple search terms in the search bar
+    And clicks the search button
+    Then the user should see results based on all specified terms

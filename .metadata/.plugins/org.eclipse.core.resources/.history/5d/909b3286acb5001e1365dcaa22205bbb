@@ -1,0 +1,23 @@
+Feature: Product Search Functionality
+
+  Scenario Outline: Enter  search term and verify  results
+    Given I open the browser and enter the URL 
+     
+   When I enter  product name as '<validproductName>' in the search bar
+    And I click on the search button
+    When I enter product name as '<empty>' in the search bar
+    And I click on the search button
+     When I enter product name as '<invalidproductName>' in the search bar
+     And I click on the search button
+     When I enter product name as '<mispelledproductName>' in the search bar
+     And I click on the search button
+    When I enter  product name as '<validproductName2>' in the search bar
+    And I click on the search button
+     Examples:
+   
+| validproductName|      |empty|      |invalidproductName|  |mispelledproductName|   |validproductName2                     |                   
+                                   
+| sofa            |      |     |       |   perfumes      |  |  chopa                 |Industrial Tan 90cm Studded Back Bench|                    
+                                   
+                                     
+    

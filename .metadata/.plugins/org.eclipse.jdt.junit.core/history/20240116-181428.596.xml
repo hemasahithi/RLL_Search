@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="RLL-ChilternoakProj" tests="5" started="5" failures="0" errors="5" ignored="0">
+  <testsuite name="runner.TestRunner" time="36.377">
+    <testsuite name="Product Search Functionality" time="36.377">
+      <testcase name="Enter  search term and verify  results #1" classname="Product Search Functionality" time="7.738">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'I enter a product name as "sofa" in the search bar' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("I enter a product name as {string} in the search bar")
+public void i_enter_a_product_name_as_in_the_search_bar(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #2" classname="Product Search Functionality" time="7.117">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'I enter a product name as "" in the search bar' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("I enter a product name as {string} in the search bar")
+public void i_enter_a_product_name_as_in_the_search_bar(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #3" classname="Product Search Functionality" time="5.848">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'I enter a product name as "sofaier" in the search bar' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("I enter a product name as {string} in the search bar")
+public void i_enter_a_product_name_as_in_the_search_bar(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #4" classname="Product Search Functionality" time="8.236">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'I enter a product name as "perfume" in the search bar' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("I enter a product name as {string} in the search bar")
+public void i_enter_a_product_name_as_in_the_search_bar(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #5" classname="Product Search Functionality" time="7.437">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'I enter a product name as "Industrial Tan 90cm Studded Back Bench" in the search bar' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("I enter a product name as {string} in the search bar")
+public void i_enter_a_product_name_as_in_the_search_bar(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

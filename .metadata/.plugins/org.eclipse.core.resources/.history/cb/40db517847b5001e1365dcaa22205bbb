@@ -1,0 +1,83 @@
+package Steps;
+
+import static org.junit.Assert.assertEquals;
+
+import org.apache.logging.log4j.LogManager;
+
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.aventstack.extentreports.util.Assert;
+
+
+import io.cucumber.java.PendingException;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pagefactory.Searchpage;
+
+
+public class Searchsteps {
+	Logger logger = LogManager.getLogger(Searchsteps.class);
+	  
+	WebDriver driver = new ChromeDriver();
+	
+	
+    public Searchpage searchPage;
+    
+    
+    
+    @Given("I open the browser and enter the URL")
+    public void iOpenTheBrowserAndEnterTheURL() {
+    	logger.info("Chilternoak Furniture Homepage");
+    	 searchPage = new Searchpage();
+    	driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.chilternoakfurniture.co.uk/");
+        searchPage= PageFactory.initElements(driver, Searchpage.class);
+
+        
+    }
+
+    @When("I enter a valid product name as {string} in the search bar")
+    public void iEnterAValidProductNameInTheSearchBar(String productName) {
+    	logger.info( "entering valid product name");
+        searchPage.enterSearchTerm(productName);
+    }
+
+    @When("I click on the search button")
+    public void iClickOnTheSearchButton() {
+    	logger.info("clicking on search button");
+        searchPage.clickSearchButton();
+        driver.close();
+    }
+    public void teardown (Scenario scenario)
+	{
+			
+			
+			TakesScreenshot ts = (TakesScreenshot)driver;
+			final byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(screenshot, "image/png", scenario.getName());
+	
+		
+		driver.close();
+	}	
+    
+       
+        	
+        	
+        }
+          
+    
+    
+
+        
+        
+   
+    
+    

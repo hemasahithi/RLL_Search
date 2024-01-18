@@ -1,0 +1,148 @@
+package Steps;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import junit.framework.Assert;
+import pagefactory.Searchpage;
+
+
+public class Searchsteps {
+	Logger logger = LogManager.getLogger(Searchsteps.class);
+	  
+	WebDriver driver = new ChromeDriver();
+	
+	
+    public Searchpage searchPage;
+    
+    
+    
+    @Given("I open the browser and enter the URL")
+    public void iOpenTheBrowserAndEnterTheURL() {
+    	logger.info("Chilternoak Furniture Homepage");
+    	 searchPage = new Searchpage();
+    	driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.chilternoakfurniture.co.uk/");
+        searchPage= PageFactory.initElements(driver, Searchpage.class);
+        
+
+        
+    }
+
+    @When("I enter  product name as {string} in the search bar1")
+    public void iEnterAValidProductNameInTheSearchBar1(String validproductName) {
+    	logger.info( "entering valid product name");
+        searchPage.enterSearchTerm(validproductName);
+        
+        
+        
+    }
+
+    @And("I click on the search button")
+    public void iClickOnTheSearchButton1() {
+    	logger.info("clicking on search button");
+        searchPage.clickSearchButton();
+        driver.close();
+    }
+    @Then("relevant results should be displayed")
+    public void relevantresultsdisplayed() {
+    	
+    }
+     
+    @When("I enter  product name as {string} in the search bar")
+    public void iEnterProductNameasemptyInTheSearchBar2(String empty) {
+    	logger.info( "entering empty product ");
+        searchPage.enterSearchTerm(empty);
+        
+      
+      
+    }
+
+    @And("I click on the search button")
+    public void iClickOnTheSearchButton2() {
+    	logger.info("clicking on search button");
+        searchPage.clickSearchButton();
+        driver.close();
+    }
+    
+    @Then("no results should be displayed")
+    public void noresultsdisplayed() {
+    	
+    }
+    @When("I enter  product name as {string} in the search bar")
+    public void iEnterAValidProductNameInTheSearchBar3(String invalidproductName) {
+    	logger.info( "entering invalid product name");
+        searchPage.enterSearchTerm(invalidproductName);
+        
+      
+      
+    }
+
+    @And("I click on the search button")
+    public void iClickOnTheSearchButton3() {
+    	logger.info("clicking on search button");
+        searchPage.clickSearchButton();
+        driver.close();
+    }
+    
+    @Then("no results should be displayed for an invalid product name")
+    public void noresultsshoulddisplayedforaninvalidproductname() {
+    	
+    }
+    @When("I enter  product name as {string} in the search bar")
+    public void iEnterAValidProductNameInTheSearchBar4(String mispelledproductName) {
+    	logger.info( "entering mispelledproduct name");
+        searchPage.enterSearchTerm(mispelledproductName);
+        
+      
+      
+    }
+
+    @And("I click on the search button")
+    public void iClickOnTheSearchButton4() {
+    	logger.info("clicking on search button");
+        searchPage.clickSearchButton();
+        driver.close();
+    }
+    
+    @Then("the system should suggest a correction for the misspelled product name")
+    public void thesystemshouldsuggestacorrectionforthemisspelledproductname() {
+    	
+    }
+    @When("I enter  product name as {string} in the search bar")
+    public void iEnterAValidProductNameInTheSearchBar5(String validproductName2) {
+    	logger.info( "entering valid product name");
+        searchPage.enterSearchTerm(validproductName2);
+        
+      
+      
+    }
+
+    @And("I click on the search button")
+    public void iClickOnTheSearchButton5() {
+    	logger.info("clicking on search button");
+        searchPage.clickSearchButton();
+        driver.close();
+    }
+    @Then("relevant results should be displayed")
+    public void relevantresultsisdisplayed() {
+    	
+    }
+    
+    
+		
+    	
+        	
+        }
+
+    
+    

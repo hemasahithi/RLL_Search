@@ -1,0 +1,36 @@
+package pagefactory;
+
+
+import org.openqa.selenium.support.FindBy;
+
+	
+	import org.openqa.selenium.WebElement;
+
+	public class Searchpage {
+
+	    @FindBy(xpath="//input[@type='text']")
+	    public WebElement searchBar;
+
+	    @FindBy(xpath="//button[@type='submit']")
+	    public WebElement searchButton;
+	    
+	 // Add a method to retrieve search results
+	    public String getSearchResults() {
+	    	String actualproductName = "actualproductName";
+	        // Implement logic to retrieve and return search results text
+	        // You may use WebDriver methods or any other mechanism
+	      // Placeholder, replace with actual implementation
+			return actualproductName;
+	    }
+
+	    public void enterSearchTerm(String productName) {
+	        searchBar.sendKeys(productName);
+	    }
+
+	    public void clickSearchButton() {
+	        searchButton.click();
+	    }
+	
+	}
+
+

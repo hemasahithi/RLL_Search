@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="86.626">
+    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results" time="24.222">
+        <system-out><![CDATA[Given I open the browser and enter the URL..................................passed
+When I enter a valid product name as 'sofa' in the search bar...............passed
+And I click on the search button............................................passed
+Then results should be found for the search term............................passed
+Then no results should be found for the search term.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 2" time="10.933">
+        <system-out><![CDATA[Given I open the browser and enter the URL..................................passed
+When I enter a valid product name as '' in the search bar...................passed
+And I click on the search button............................................passed
+Then results should be found for the search term............................passed
+Then no results should be found for the search term.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 3" time="11.828">
+        <system-out><![CDATA[Given I open the browser and enter the URL..................................passed
+When I enter a valid product name as 'perfumes' in the search bar...........passed
+And I click on the search button............................................passed
+Then results should be found for the search term............................passed
+Then no results should be found for the search term.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 4" time="13.068">
+        <system-out><![CDATA[Given I open the browser and enter the URL..................................passed
+When I enter a valid product name as 'chopa' in the search bar..............passed
+And I click on the search button............................................passed
+Then results should be found for the search term............................passed
+Then no results should be found for the search term.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Product Search Functionality" name="Enter  search term and verify  results 5" time="26.372">
+        <system-out><![CDATA[Given I open the browser and enter the URL..................................passed
+When I enter a valid product name as 'Industrial Tan 90cm Studded Back Bench' in the search bar.passed
+And I click on the search button............................................passed
+Then results should be found for the search term............................passed
+Then no results should be found for the search term.........................passed
+]]></system-out>
+    </testcase>
+</testsuite>

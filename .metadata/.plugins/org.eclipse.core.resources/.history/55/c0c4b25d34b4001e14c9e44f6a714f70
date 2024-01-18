@@ -1,0 +1,80 @@
+package Steps;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Searchsteps {
+	WebDriver driver;
+	
+	@Given("the user is on the homepage")
+	public void the_user_is_on_the_homepage() {
+	    driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.get("https://www.chilternoakfurniture.co.uk/");
+	}
+
+	@When("the user enters a valid search term in the search bar")
+	public void the_user_enters_a_valid_search_term_in_the_search_bar() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("clicks the search button")
+	public void clicks_the_search_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("the user should see relevant search results")
+	public void the_user_should_see_relevant_search_results() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("the user leaves the search bar empty")
+	public void the_user_leaves_the_search_bar_empty() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("the user should see a message indicating no results found")
+	public void the_user_should_see_a_message_indicating_no_results_found() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("the user enters a non-existent term in the search bar")
+	public void the_user_enters_a_non_existent_term_in_the_search_bar() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("the user enters a misspelled search term in the search bar")
+	public void the_user_enters_a_misspelled_search_term_in_the_search_bar() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("the user should see suggestions for the correct term")
+	public void the_user_should_see_suggestions_for_the_correct_term() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("the user enters multiple search terms in the search bar")
+	public void the_user_enters_multiple_search_terms_in_the_search_bar() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("the user should see results based on all specified terms")
+	public void the_user_should_see_results_based_on_all_specified_terms() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

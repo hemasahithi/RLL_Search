@@ -1,0 +1,27 @@
+package Steps;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import pagefactory.Searchpage;
+
+public class Searchsteps {
+
+    private Searchpage searchPage;
+
+    @Given("I open the browser and enter the URL")
+    public void iOpenTheBrowserAndEnterTheURL() {
+        // Implement code to open the browser and navigate to the URL
+        // Instantiate the SearchPage class
+        searchPage = new Searchpage();
+    }
+
+    @When("I enter a valid product name as {string} in the search bar")
+    public void iEnterAValidProductNameInTheSearchBar(String productName) {
+        searchPage.enterSearchTerm(productName);
+    }
+
+    @When("I click on the search button")
+    public void iClickOnTheSearchButton() {
+        searchPage.clickSearchButton();
+    }
+}

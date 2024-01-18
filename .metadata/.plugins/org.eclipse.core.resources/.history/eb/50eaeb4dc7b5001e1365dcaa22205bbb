@@ -1,0 +1,90 @@
+package Steps;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import junit.framework.Assert;
+import pagefactory.Searchpage;
+
+
+public class Searchsteps {
+	Logger logger = LogManager.getLogger(Searchsteps.class);
+	  
+	WebDriver driver = new ChromeDriver();
+	
+	
+    public Searchpage searchPage;
+    
+    
+    
+    @Given("I open the browser and enter the URL")
+    public void iOpenTheBrowserAndEnterTheURL() {
+    	logger.info("Chilternoak Furniture Homepage");
+    	 searchPage = new Searchpage();
+    	driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.chilternoakfurniture.co.uk/");
+        searchPage= PageFactory.initElements(driver, Searchpage.class);
+        
+
+        
+    }
+
+    @When("I enter a valid product name as {string} in the search bar")
+    public void iEnterAValidProductNameInTheSearchBar(String productName) {
+    	logger.info( "entering valid product name");
+        searchPage.enterSearchTerm(productName);
+       
+        
+    }
+
+    @When("I click on the search button")
+    public void iClickOnTheSearchButton() {
+    	logger.info("clicking on search button");
+        searchPage.clickSearchButton();
+        driver.close();
+    }
+    @Then("results should be found for the search term")
+    public void resultsShouldBeFoundForTheSearchTerm() {
+        // Assuming you have a SearchModule instance
+        Searchpage SearchModule = new Searchpage();
+
+        // Replace "validProductName" with the actual product name used in your test
+        String validProductName = "Genoa Glass Sofa Table With Gold Frame";
+
+        // Perform search and check results
+        boolean resultsFound = Searchpage.isResultFound(validProductName);
+
+        // Assert the results
+        assertFalse("Results should be found for the search term", resultsFound);
+    }
+
+    @Then("no results should be found for the search term")
+    public void noResultsShouldBeFoundForTheSearchTerm() {
+        // Assuming you have a SearchModule instance
+        SearchModule searchModule = new SearchModule();
+
+        // Replace "nonExistentTerm" with a product name that doesn't exist in your system
+        String nonExistentTerm = "Bikes";
+
+        // Perform search and check results
+        boolean resultsFound = searchModule.isResultFound(nonExistentTerm);
+
+        // Assert the results
+        assertFalse("No results should be found for the search term", resultsFound);
+    }
+}
+   
+        
+        

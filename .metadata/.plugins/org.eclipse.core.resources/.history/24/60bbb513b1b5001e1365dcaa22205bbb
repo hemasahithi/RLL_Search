@@ -1,0 +1,57 @@
+package pagefactory;
+
+
+import org.openqa.selenium.support.FindBy;
+
+	
+	import org.openqa.selenium.WebElement;
+
+	public class Searchpage {
+
+	    @FindBy(xpath="//input[@type='text']")
+	    public WebElement searchBar;
+
+	    @FindBy(xpath="//button[@type='submit']")
+	    public WebElement searchButton;
+	    
+	
+
+	    public void enterSearchTerm(String productName) {
+	        searchBar.sendKeys(productName);
+	    }
+
+	    public void clickSearchButton() {
+	        searchButton.click();
+	    }
+	    public void enterSearchTerm2(String empty) {
+	        searchBar.sendKeys(empty);
+	    }
+
+	    public void clickSearchButton2() {
+	        searchButton.click();
+	    }
+	    public void enterSearchTerm3(String invalidproductName) {
+	        searchBar.sendKeys(invalidproductName);
+	    }
+
+	    public void clickSearchButton3() {
+	        searchButton.click();
+	    }
+	    public void enterSearchTerm4(String mispelledproductName) {
+	        searchBar.sendKeys(mispelledproductName);
+	    }
+
+	    public void clickSearchButton4() {
+	        searchButton.click();
+	    }
+	    public void enterSearchTerm5(String validproductName2) {
+	        searchBar.sendKeys(validproductName2);
+	    }
+
+	    public void clickSearchButton5() {
+	        searchButton.click();
+	    }
+	
+	}
+
+

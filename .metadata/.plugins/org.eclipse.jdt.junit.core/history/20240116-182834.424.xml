@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="RLL-ChilternoakProj" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="36.904">
+    <testsuite name="Product Search Functionality" time="36.904">
+      <testcase name="Enter valid search term and verify relevant results #1" classname="Product Search Functionality" time="24.3"/>
+      <testcase name="Enter valid search term and verify relevant results #2" classname="Product Search Functionality" time="12.604"/>
+    </testsuite>
+  </testsuite>
+</testrun>

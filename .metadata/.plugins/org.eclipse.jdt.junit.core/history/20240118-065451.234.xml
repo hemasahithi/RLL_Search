@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="RLL-ChilternoakProj" tests="5" started="5" failures="5" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="76.794">
+    <testsuite name="Product Search Functionality" time="76.794">
+      <testcase name="Enter  search term and verify  results #1" classname="Product Search Functionality" time="15.397">
+        <failure>
+          <expected/>
+          <actual>Search</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Search]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at Steps.Searchsteps.iOpenTheBrowserAndEnterTheURL(Searchsteps.java:37)&#13;
+	at ✽.I open the browser and enter the URL(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:4)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #2" classname="Product Search Functionality" time="8.578">
+        <failure>
+          <expected/>
+          <actual>Search</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Search]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at Steps.Searchsteps.iOpenTheBrowserAndEnterTheURL(Searchsteps.java:37)&#13;
+	at ✽.I open the browser and enter the URL(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:4)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #3" classname="Product Search Functionality" time="9.112">
+        <failure>
+          <expected/>
+          <actual>Search</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Search]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at Steps.Searchsteps.iOpenTheBrowserAndEnterTheURL(Searchsteps.java:37)&#13;
+	at ✽.I open the browser and enter the URL(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:4)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #4" classname="Product Search Functionality" time="33.43">
+        <failure>
+          <expected/>
+          <actual>Search</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Search]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at Steps.Searchsteps.iOpenTheBrowserAndEnterTheURL(Searchsteps.java:37)&#13;
+	at ✽.I open the browser and enter the URL(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:4)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #5" classname="Product Search Functionality" time="10.268">
+        <failure>
+          <expected/>
+          <actual>Search</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Search]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at Steps.Searchsteps.iOpenTheBrowserAndEnterTheURL(Searchsteps.java:37)&#13;
+	at ✽.I open the browser and enter the URL(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:4)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

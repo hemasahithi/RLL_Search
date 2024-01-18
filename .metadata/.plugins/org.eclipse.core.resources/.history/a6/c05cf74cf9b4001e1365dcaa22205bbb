@@ -1,0 +1,6 @@
+# extent.properties
+
+# Report Configuration
+extent.reporter.html.start=true
+extent.reporter.html.out=target/cucumber-extent-report.html
+extent.reporter.html.config=src/test/resources/extent-config.xml

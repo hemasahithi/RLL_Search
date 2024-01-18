@@ -1,0 +1,10 @@
+package Steps;
+
+public class SearchModule {
+
+	public boolean isResultFound(String nonExistentTerm) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

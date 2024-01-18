@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="RLL-ChilternoakProj" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="75.793">
+    <testsuite name="Product Search Functionality" time="75.793">
+      <testcase name="Enter  search term and verify  results #1" classname="Product Search Functionality" time="14.176"/>
+      <testcase name="Enter  search term and verify  results #2" classname="Product Search Functionality" time="22.755"/>
+      <testcase name="Enter  search term and verify  results #3" classname="Product Search Functionality" time="14.584"/>
+      <testcase name="Enter  search term and verify  results #4" classname="Product Search Functionality" time="10.66"/>
+      <testcase name="Enter  search term and verify  results #5" classname="Product Search Functionality" time="13.618"/>
+    </testsuite>
+  </testsuite>
+</testrun>

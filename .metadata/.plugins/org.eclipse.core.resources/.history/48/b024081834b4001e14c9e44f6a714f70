@@ -1,0 +1,10 @@
+Feature: Product Search Functionality
+
+  Scenario: Enter valid search term and verify relevant results
+    Given the user is on the homepage
+    When the user enters a valid search term in the <search bar>
+    And clicks the search button
+    Then the user should see relevant search results
+Examples:
+| search bar|
+  

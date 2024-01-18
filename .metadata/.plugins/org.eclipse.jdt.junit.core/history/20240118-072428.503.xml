@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="RLL-ChilternoakProj" tests="5" started="5" failures="5" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="76.508">
+    <testsuite name="Product Search Functionality" time="76.508">
+      <testcase name="Enter  search term and verify  results #1" classname="Product Search Functionality" time="10.666">
+        <failure>
+          <expected/>
+          <actual>sofa</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[sofa]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at Steps.Searchsteps.iEnterAValidProductNameInTheSearchBar(Searchsteps.java:45)&#13;
+	at ✽.I enter a valid product name as 'sofa' in the search bar(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:6)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #2" classname="Product Search Functionality" time="9.727">
+        <failure>
+          <expected/>
+          <actual>sofa</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[sofa]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at Steps.Searchsteps.iEnterAValidProductNameInTheSearchBar(Searchsteps.java:45)&#13;
+	at ✽.I enter a valid product name as '' in the search bar(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:6)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #3" classname="Product Search Functionality" time="10.599">
+        <failure>
+          <expected/>
+          <actual>sofa</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[sofa]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at Steps.Searchsteps.iEnterAValidProductNameInTheSearchBar(Searchsteps.java:45)&#13;
+	at ✽.I enter a valid product name as 'perfumes' in the search bar(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:6)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #4" classname="Product Search Functionality" time="34.187">
+        <failure>
+          <expected/>
+          <actual>sofa</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[sofa]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at Steps.Searchsteps.iEnterAValidProductNameInTheSearchBar(Searchsteps.java:45)&#13;
+	at ✽.I enter a valid product name as 'chopa' in the search bar(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:6)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #5" classname="Product Search Functionality" time="11.32">
+        <failure>
+          <expected/>
+          <actual>sofa</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[sofa]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at Steps.Searchsteps.iEnterAValidProductNameInTheSearchBar(Searchsteps.java:45)&#13;
+	at ✽.I enter a valid product name as 'Industrial Tan 90cm Studded Back Bench' in the search bar(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:6)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

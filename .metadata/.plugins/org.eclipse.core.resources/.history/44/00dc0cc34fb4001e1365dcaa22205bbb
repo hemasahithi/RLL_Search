@@ -1,0 +1,38 @@
+package Steps;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+import io.cucumber.java.en.Given;
+
+import io.cucumber.java.en.When;
+ 
+
+public class Searchsteps {
+	WebDriver driver;
+	
+	@Given("I open the browser and enter the URL")
+	public void i_open_the_browser_and_enter_the_url() {
+		 driver = new ChromeDriver();
+		    driver.manage().window().maximize();
+		    driver.get("https://www.chilternoakfurniture.co.uk/");
+	    
+	}
+
+
+	
+
+	@When("I enter a valid product name as {string} in the search bar")
+	public void i_enter_a_valid_product_name_as_in_the_search_bar(String productName)  {
+	   driver.findElement(By.xpath("//input[@type='text'")).sendKeys(productName);
+	    
+	}
+
+	@When("I click on the search button")
+	public void i_click_on_the_search_button() {
+		
+	}
+	
+}

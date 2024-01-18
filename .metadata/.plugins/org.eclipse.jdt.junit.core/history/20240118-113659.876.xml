@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="RLL-ChilternoakProj" tests="5" started="5" failures="5" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="57.915">
+    <testsuite name="Product Search Functionality" time="57.915">
+      <testcase name="Enter  search term and verify  results #1" classname="Product Search Functionality" time="11.998">
+        <failure>java.lang.AssertionError: No results should be found for the search term&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at Steps.Searchsteps.noResultsShouldBeFoundForTheSearchTerm(Searchsteps.java:85)&#13;
+	at ✽.no results should be found for the search term(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:9)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #2" classname="Product Search Functionality" time="9.14">
+        <failure>java.lang.AssertionError: No results should be found for the search term&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at Steps.Searchsteps.noResultsShouldBeFoundForTheSearchTerm(Searchsteps.java:85)&#13;
+	at ✽.no results should be found for the search term(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:9)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #3" classname="Product Search Functionality" time="12.01">
+        <failure>java.lang.AssertionError: No results should be found for the search term&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at Steps.Searchsteps.noResultsShouldBeFoundForTheSearchTerm(Searchsteps.java:85)&#13;
+	at ✽.no results should be found for the search term(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:9)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #4" classname="Product Search Functionality" time="12.765">
+        <failure>java.lang.AssertionError: No results should be found for the search term&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at Steps.Searchsteps.noResultsShouldBeFoundForTheSearchTerm(Searchsteps.java:85)&#13;
+	at ✽.no results should be found for the search term(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:9)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="Enter  search term and verify  results #5" classname="Product Search Functionality" time="12.002">
+        <failure>java.lang.AssertionError: No results should be found for the search term&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at Steps.Searchsteps.noResultsShouldBeFoundForTheSearchTerm(Searchsteps.java:85)&#13;
+	at ✽.no results should be found for the search term(file:///C:/Users/P.NAGA%20SAHITHI/Desktop/RLL%20Workspace/RLL-ChilternoakProj/src/test/java/feature/Search.feature:9)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

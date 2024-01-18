@@ -1,0 +1,14 @@
+Feature: Product Search Functionality
+
+  Scenario: Enter valid search term and verify relevant results
+    Given I open the browser and enter the URL 
+     
+   When I enter a valid product name as <productName> in the search bar
+    And I click on the search button
+Examples:
+| productName|
+ |"sofa"| 
+ |"|
+ |"perfume"|
+ |"Industrial Tan 90cm Studded Back Bench"|
+ |"suafa"|

@@ -1,0 +1,16 @@
+Feature: Product Search Functionality
+
+  Scenario: Enter  search term and verify  results
+    Given I open the browser and enter the URL 
+     
+   When I enter a valid product name as <productName> in the search bar
+    And I click on the search button
+    Then I should see search results for <expectedProductName>
+Examples:
+| productName|                                  |expectedProductName|
+ |"sofa"|                                       |" sofa"|
+ |""|                                            |"Search our store"|
+ |"perfumes"|                                    |"perfumes"|
+ |"sufo"|                                         |"No results found"|
+ |"Industrial Tan 90cm Studded Back Bench"|       |" Industrial Tan 90cm Studded Back Bench"|
+
